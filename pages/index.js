@@ -1,11 +1,14 @@
-import Header from "../components/Header/Header";
+import Layout from "components/layout/Layout";
 
+import { Section } from "styles/global";
 
 const Home = () => {
   return (
-    <>
-      <Header />
-    </>
+    <Layout>
+      <Section grid>
+          <div>test</div>
+      </Section>
+    </Layout>
   );
 };
 
