@@ -1,4 +1,6 @@
 import Layout from "components/layout/Layout";
+import Hero from "components/hero/Hero";
+import BackgroundAnimation from "components/hero/BackgroundAnimation";
 
 import { Section } from "styles/global";
 
@@ -6,7 +8,8 @@ const Home = () => {
   return (
     <Layout>
       <Section grid>
-          <div>test</div>
+          <Hero />
+          <BackgroundAnimation />
       </Section>
     </Layout>
   );
