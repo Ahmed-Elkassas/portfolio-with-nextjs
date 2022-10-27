@@ -4,6 +4,7 @@ import BackgroundAnimation from "components/hero/BackgroundAnimation";
 
 import { Section } from "styles/global";
 import  Works  from "components/works/Works";
+import About from "components/about/About";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
           <Hero />
           <BackgroundAnimation />
       </Section>
+      <About />
       <Works />
     </Layout>
   );
