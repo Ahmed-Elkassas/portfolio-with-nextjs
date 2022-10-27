@@ -9,6 +9,7 @@ export const FooterSec = styled.footer`
     a {
         color: ${props => props.theme.colors.primary};
         width: max-content;
+        font-family: 'Fuzzy Bubbles', cursive;
         margin: auto;
         transition: all 0.3 ease-in;
     }
