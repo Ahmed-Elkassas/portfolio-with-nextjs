@@ -2,14 +2,14 @@ import {AiOutlineFolder} from 'react-icons/ai';
 import {FiExternalLink} from 'react-icons/fi'
 
 import { GridContainer,GridItem, Title, MainSection } from 'styles/global';
-import { Card, CardHeader, CardTitle, CardContent, CardFooter } from './workStyles';
+import { Card, CardHeader, CardTitle, CardContent, CardFooter, ImgContainer } from './workStyles';
 
 import {projects} from 'data/constants'
 
 const Works = () => {
   return (
     <MainSection padding id="work">
-        <Title>
+        <Title blue>
             Work
         </Title>
         <GridContainer>
@@ -28,7 +28,9 @@ const Works = () => {
                                     </a>
                                 </div>
                             </CardHeader>
+                            <ImgContainer>
                             <CardTitle>{item.title}</CardTitle>
+                            <img src={item.img} alt={item.title} /></ImgContainer>
                             <CardContent>{item.description}</CardContent>
                          </header>
                          <CardFooter>

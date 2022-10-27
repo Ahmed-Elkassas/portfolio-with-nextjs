@@ -9,7 +9,6 @@ export const Card = styled.div`
     align-items: flex-start;
     position: relative;
     height: 100%;
-    padding: 2rem 1.75rem;
     background-color: #112240;
     border-radius: 6px;
     box-shadow:  0 10px 30px -15px rgba(2,12,27,0.7);
@@ -19,8 +18,9 @@ export const CardHeader = styled.div`
     -webkit-box-pack: justify;
     justify-content: space-between;
     -webkit-box-align: center;
+    padding: 2rem 1.75rem;
     align-items: center;
-    margin-bottom: 35px;
+    /* margin-bottom: 35px; */
     .project__folder {
         color: ${(props) => props.theme.colors.mainColor};
     }
@@ -34,18 +34,44 @@ export const CardHeader = styled.div`
     }
 `
 
-export const CardTitle = styled.h3`
+export const ImgContainer = styled.div`
+    width: 100%;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(27,118,21,0.8) 15%,  rgba(0,0,0,0.1));
+        z-index: 1;
+    }
+    img {
+        max-width: 100%;
+        height: 300px;
+    }
+`
 
+export const CardTitle = styled.h3`
+    padding: 2rem 1.75rem 1rem;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 2;
 `
 
 export const CardContent = styled.p`
-    margin: 15px auto;
+    padding: 2rem 1.75rem;
+
 `
 export const CardFooter = styled.footer`
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
+    padding: 1rem 1.75rem ;
+
     span {
         color: gray;
         display: block;
