@@ -10,7 +10,7 @@ export default {
     mainColor: "#64ffda",
   },
   backgrounds: {
-    mainBackground: "#0F1624",
+    mainBackground: "#0a192f", 
     background2: "hsl(232.7,27.3%,23.7%)",
   },
   breakpoints: {
