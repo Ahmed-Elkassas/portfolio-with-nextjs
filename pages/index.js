@@ -3,6 +3,7 @@ import Hero from "components/hero/Hero";
 import BackgroundAnimation from "components/hero/BackgroundAnimation";
 
 import { Section } from "styles/global";
+import  Works  from "components/works/Works";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
           <Hero />
           <BackgroundAnimation />
       </Section>
+      <Works />
     </Layout>
   );
 };

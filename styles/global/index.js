@@ -3,23 +3,21 @@ import styled from "styled-components";
 export const Section = styled.section`
     display: ${props => props.grid ? "grid" : "flex"};
     flex-direction: ${props => props.row ? "row" : "column"};
-    padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" };
     margin: auto 0;
     max-width: 1040px;
     position: relative;
-    /* overflow: hidden; */
     grid-template-columns: 1fr 1fr;
     @media ${(props) => props.theme.breakpoints.md} {
-        padding: 24px 10px;
         flex-direction: column;
     }
     @media ${(props) => props.theme.breakpoints.sm} {
-        padding: ${(props) => props.nopadding ? "0": "16px 16px 0"};
         width: calc(100vw - 32px);
         flex-direction: column;
     }
 `
-
+export const MainSection = styled.section`
+    padding: ${props => props.padding ? '100px 0px' : '0px'};
+`
 export const SectionTitle = styled.h2`
     font-size: ${(props) => props.main ? '56px' : '49px'};
     line-height: ${(props) => props.main ? '60px' : '50px'};
@@ -64,6 +62,48 @@ export const SectionText = styled.p`
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 16px;
+  }
+`
+export const GridContainer = styled.ul`
+  list-style: none;
+    padding: 0px;
+    margin: 50px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    position: relative;
+`
+export const GridItem = styled.li`
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  visibility: visible;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  
+  &:hover {
+    transform: translateY(-7px);
+  }
+`
+
+export const Title = styled.h2`
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px 40px 40px;
+  font-size: 29px;
+  font-weight: 900;
+  width: 100%;
+  color: #B3FFAE;
+  &::after {
+    content: "";
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 300px;
+    height: 1px;
+    display: block;
+    background: #ccd6f6;
+    margin-left: 15px;
   }
 `
 
@@ -125,5 +165,4 @@ export const Button = styled.a`
   &:active {
     scale: .96
   }
- 
 `
