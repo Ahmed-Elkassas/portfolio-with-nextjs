@@ -1,19 +1,18 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Layout from "components/layout/Layout";
+import Hero from "components/hero/Hero";
+import BackgroundAnimation from "components/hero/BackgroundAnimation";
 
-export default function Home() {
+import { Section } from "styles/global";
+
+const Home = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Ahmed Elkassas</title>
-        <meta name="description" content="front-end developer here..." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout>
+      <Section grid>
+          <Hero />
+          <BackgroundAnimation />
+      </Section>
+    </Layout>
+  );
+};
 
-      <main className={styles.main}>
-       <h2>Hi, this Ahmed Elqassas</h2>
-      </main>
-    </div>
-  )
-}
+export default Home;
