@@ -7,6 +7,7 @@ export default {
     primary: "hsl(204,23.8%,95.9%)",
     accent1: "hsl(34.9,98.6%,72.9%)",
     button: "hsl(205.1,100%,36.1%)",
+    text: "rgba(255, 255, 255, 0.5)",
     mainColor: "#64ffda",
   },
   backgrounds: {

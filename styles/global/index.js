@@ -55,7 +55,7 @@ export const SectionText = styled.p`
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: ${(props) => props.theme.colors.text} ;
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
     font-size: 20px;
@@ -87,6 +87,7 @@ export const GridItem = styled.li`
 
   &:hover {
     transform: translateY(-7px);
+    cursor: pointer;
   }
 `;
 
@@ -188,3 +189,13 @@ export const Button = styled.a`
     scale: 0.96;
   }
 `;
+
+export const Paragraph = styled.p`
+    width: 90%;
+   padding: 1rem 2rem;
+   margin: auto;
+   font-size: 1.8rem;
+   letter-spacing: 1.5px;
+   line-height: 27px;
+   color: ${(props) => props.theme.colors.text} 
+`

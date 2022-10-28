@@ -44,7 +44,7 @@ export const ImgContainer = styled.div`
         left: 0;
         height: 100%;
         width: 100%;
-        background: linear-gradient(to bottom, rgba(27,118,21,0.8) 3%,  rgba(0,0,0,0.1) 95%, rgba(0,0,0,0.1) 100%);
+        background: linear-gradient(to bottom, rgba(44, 73, 216, 0.7) 3%,  rgba(0,0,0,0.1) 95%, rgba(0,0,0,0.1) 100%);
         z-index: 1;
     }
     img {
@@ -63,6 +63,7 @@ export const CardTitle = styled.h3`
 
 export const CardContent = styled.p`
     padding: 2rem 1.75rem;
+    color: #bababa;
 
 `
 export const CardFooter = styled.footer`
@@ -74,6 +75,9 @@ export const CardFooter = styled.footer`
 
     span {
         color: gray;
+        padding: 6px;
+        border-radius: 2px;
+        background: #2c49d826;
         display: block;
     }
 `
