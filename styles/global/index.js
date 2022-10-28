@@ -108,15 +108,19 @@ export const Title = styled.h2`
     transition: all 0.1s ease-in-out;
     z-index: -1;
     height: 0.3em;
-    width: 8%;
-    left: -1%;
+    width: ${(props) =>
+      props.blue
+        ? "6.5%"
+        : props.yellow
+        ? "11.5%"
+        : "9.4%"};
     background: ${(props) =>
       props.blue
-        ? "linear-gradient(65deg, #2C49D8 0%, #2C49D8 100%, rgba(255, 209, 0, 0) 100%)"
-        : props.yellow
-        ? "linear-gradient(65deg, #FF6B2B 0%, #FF6B2B 100%, rgba(255, 209, 0, 0) 100%)"
-        : "linear-gradient(65deg, #DF058D 0%, #DF058D 100%, rgba(255, 209, 0, 0) 100%)"};
-  }
+      ? "linear-gradient(65deg, #2C49D8 0%, #2C49D8 100%, rgba(255, 209, 0, 0) 100%)"
+      : props.yellow
+      ? "linear-gradient(65deg, #FF6B2B 0%, #FF6B2B 100%, rgba(255, 209, 0, 0) 100%)"
+      : "linear-gradient(65deg, #DF058D 0%, #DF058D 100%, rgba(255, 209, 0, 0) 100%)"};
+}
   &::after {
     content: "";
     position: relative;
