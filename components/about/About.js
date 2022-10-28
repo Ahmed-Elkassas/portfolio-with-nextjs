@@ -1,5 +1,5 @@
 import {FaReact} from 'react-icons/fa'
-import { MainSection, Title, Paragraph, CenteredTitle, SubTitle } from "styles/global";
+import { MainSection, Title, Paragraph, CenteredTitle, SubTitle, Section, ImgContainer } from "styles/global";
 
 const About = () => {
   return (
@@ -17,7 +17,12 @@ const About = () => {
         <span><FaReact size="4rem" /></span>
         <h4>Frontend Dev React, NextJS</h4>
       </SubTitle>
-      <Paragraph>Passionate about web development and design. Over last two years of development experience in HTML, CSS, JS, React and NextJS frameworks.</Paragraph>
+      <Section row>
+        <Paragraph>Passionate about web development and design. Over last two years of development experience in HTML, CSS, JS, React and NextJS frameworks at <span>AWStreams.</span></Paragraph>
+        <ImgContainer>
+          <img src='/hello-world-html-code-768x384.webp' alt="hello world code" />
+        </ImgContainer>
+      </Section>
     </MainSection>
   );
 };

@@ -16,7 +16,7 @@ export const Section = styled.section`
   }
 `;
 export const MainSection = styled.section`
-  padding: ${(props) => (props.padding ? "100px 0px" : "0px")};
+  padding: ${(props) => (props.padding ? "100px 0px 0px" : "0px")};
 `;
 export const SectionTitle = styled.h2`
   font-size: ${(props) => (props.main ? "56px" : "49px")};
@@ -198,12 +198,16 @@ export const Paragraph = styled.p`
    letter-spacing: 1.5px;
    line-height: 27px;
    color: ${(props) => props.theme.colors.text};
+   span {
+    font-weight: 300;
+    color: #fff;
+   }
 `
 export const CenteredTitle = styled.h2`
   text-align: center;
   font-size: 4rem;
   letter-spacing: .8px;
-  margin-top: 3rem;
+  margin: 3rem 0 2rem;
 `
 
 export const SubTitle = styled.div`
@@ -215,5 +219,13 @@ export const SubTitle = styled.div`
   margin-left: 5rem;
   h4 {
     font-size: 2rem;
+  }
+`
+export const ImgContainer = styled.div`
+  margin: -20px 0 0;
+  img {
+    width: 582px;
+    opacity: .2;
+    max-width: 100%;
   }
 `
