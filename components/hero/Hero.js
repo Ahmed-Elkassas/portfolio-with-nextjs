@@ -15,7 +15,7 @@ const Hero = () => {
         <SectionText>
         I'm a front end developer based in Egypt, I have developed many types of front-ends from well know web-application.
         </SectionText>
-        <Button padding upperText>
+        <Button padding upperText href='#contact'>
             <span>Let's build something awesome</span>
             <FiArrowRight size="2rem" />
         </Button>

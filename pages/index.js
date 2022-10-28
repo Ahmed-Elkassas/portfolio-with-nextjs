@@ -5,6 +5,7 @@ import BackgroundAnimation from "components/hero/BackgroundAnimation";
 import { Section } from "styles/global";
 import  Works  from "components/works/Works";
 import About from "components/about/About";
+import Contact from "components/contact/Contact";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       </Section>
       <About />
       <Works />
+      <Contact />
     </Layout>
   );
 };

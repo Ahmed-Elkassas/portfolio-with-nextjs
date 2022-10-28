@@ -132,6 +132,7 @@ export const Title = styled.h2`
 
 export const Button = styled.a`
   position: relative;
+  color: #fff;
   padding: ${(props) => (props.padding ? "19px 22px" : "5px")};
   cursor: pointer;
   margin-bottom: 20px;
