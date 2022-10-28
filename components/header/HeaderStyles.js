@@ -1,13 +1,33 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
-export const Logo = styled.span`
-  display: block;
-  font-size: 3rem;
+export const Logo = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  transition: all .3s ease;
+  h5 {
+    font-size: 3rem;
   font-weight: 800;
-  padding: 6px 10px;
-  border: 2px solid #64ffda;
-  border-radius: 50%;
+  margin-top: -10px;
+  color: ${props => props.theme.colors.mainColor};
+  }
+  span{
+    display: block;
+    height: 3.5px;
+    width: 14px;
+    border-radius: 1px;
+    background-color: #DF058D;
+    margin-top: 18px;
+    margin-left: 2px;
+  }
+  &:hover{
+    cursor: pointer;
+   span {
+    width: 80px;
+    margin-left: -68px;
+   } 
+  }
 `
 
 export const Container = styled.div`
