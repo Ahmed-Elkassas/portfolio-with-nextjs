@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
+
 import { AiFillGithub, } from 'react-icons/ai';
 import {FaLinkedinIn} from 'react-icons/fa'
 import { DiCssdeck } from 'react-icons/di';
@@ -30,7 +30,12 @@ const Header = () =>  (
         <Link href="#about">
           <NavLink>About</NavLink>
         </Link>
-      </li>        
+      </li> 
+      <li>
+        <Link href="#" target="_blank" rel="noopener noreferrer">
+          <a >Resume</a>
+        </Link>
+      </li>       
     </Div2>
       <Div3>
         <SocialIcons href="https://github.com/Ahmed-Elkassas" target="_blank">
