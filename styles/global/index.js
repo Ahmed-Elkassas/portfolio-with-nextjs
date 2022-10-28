@@ -197,5 +197,23 @@ export const Paragraph = styled.p`
    font-size: 1.8rem;
    letter-spacing: 1.5px;
    line-height: 27px;
-   color: ${(props) => props.theme.colors.text} 
+   color: ${(props) => props.theme.colors.text};
+`
+export const CenteredTitle = styled.h2`
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: .8px;
+  margin-top: 3rem;
+`
+
+export const SubTitle = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  width: max-content;
+  margin-left: 5rem;
+  h4 {
+    font-size: 2rem;
+  }
 `

@@ -1,6 +1,15 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
+export const Logo = styled.span`
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  padding: 6px 10px;
+  border: 2px solid #64ffda;
+  border-radius: 50%;
+`
+
 export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -22,6 +31,7 @@ export const Div1 = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
+  /* padding: 1rem; */
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 3;
   }
@@ -48,8 +58,8 @@ export const Div3 = styled.div`
 // Navigation Links
 export const NavLink = styled.a`
   font-size: 2rem;
-  line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  /* line-height: 32px; */
+  color: ${props => props.theme.colors.link};
   transition: 0.4s ease;
   &:hover {
     color: #fff;
@@ -114,4 +124,24 @@ border-radius: 50px;
     scale: 1.2;
     cursor: pointer;
   }
+`
+
+export const ResumeButton = styled.button`
+    background: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 500;
+    outline: none;
+    padding: 0.3rem 0.9rem;
+    position: relative;
+    transition: all .3s ease-in-out 0s;
+    color: ${props => props.theme.colors.link};
+    &:hover {
+      background: #64ffda;
+      background-image: linear-gradient(315deg,#64ffda,#72f29a);
+      box-shadow: 9px 7px 32px -11px rgb(20 233 86 / 74%);
+      color: ${props => props.theme.backgrounds.mainBackground}
+    }
 `

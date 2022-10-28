@@ -4,7 +4,7 @@ import { AiFillGithub, } from 'react-icons/ai';
 import {FaLinkedinIn} from 'react-icons/fa'
 import { DiCssdeck } from 'react-icons/di';
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
+import { Container, Div1, Div2, Div3, Logo, NavLink, ResumeButton, SocialIcons } from './HeaderStyles';
 
 const Header = () =>  (
   <Container>
@@ -13,6 +13,7 @@ const Header = () =>  (
         <a style={{ display: 'flex', alignItems: 'center', color:"white", marginBottom: '20px' }}>
           <DiCssdeck size="3rem" /> <span>Portfolio</span>
         </a>
+        {/* <Logo>A</Logo> */}
       </Link>
     </Div1>
     <Div2>
@@ -33,7 +34,7 @@ const Header = () =>  (
       </li> 
       <li>
         <Link href="#" target="_blank" rel="noopener noreferrer">
-          <a >Resume</a>
+          <ResumeButton>Resume</ResumeButton>
         </Link>
       </li>       
     </Div2>
