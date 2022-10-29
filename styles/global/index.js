@@ -96,7 +96,7 @@ export const Title = styled.h2`
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  margin: 0px 40px 40px;
+  margin: 0px 40px 40px 0px;
   font-size: 29px;
   font-weight: 900;
   width: 100%;

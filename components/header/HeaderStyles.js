@@ -2,7 +2,7 @@ import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
 export const Logo = styled.div`
-  display: flex;
+  /* display: flex;
   justify-content: center;
   gap: 2px;
   transition: all .3s ease;
@@ -26,7 +26,10 @@ export const Logo = styled.div`
    span {
     width: 80px;
     margin-left: -68px;
-   } 
+   }  
+  }*/
+  img {
+    color: ${props => props.theme.colors.mainColor};
   }
 `
 
@@ -46,16 +49,16 @@ export const Container = styled.div`
     width: 100%;
   }
 `;
-export const Div1 = styled.div`
-  grid-area: 1 / 1 / 2 / 2;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  /* padding: 1rem; */
-  @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 1 / 1 / 2 / 3;
-  }
-`;
+// export const Div1 = styled.div`
+//   grid-area: 1 / 1 / 2 / 2;
+//   display: flex;
+//   flex-direction: row;
+//   align-content: center;
+//   /* padding: 1rem; */
+//   @media ${(props) => props.theme.breakpoints.sm} {
+//     grid-area: 1 / 1 / 2 / 3;
+//   }
+// `;
 export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
@@ -146,7 +149,7 @@ border-radius: 50px;
   }
 `
 
-export const ResumeButton = styled.button`
+export const ResumeButton = styled.a`
     background: transparent;
     border: 1px solid #64ffda;
     border-radius: 7px;

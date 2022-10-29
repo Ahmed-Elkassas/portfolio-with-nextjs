@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: "OZZ admin-dashboard",
     description: "It's an admin dashboard built from scratch with React framework. This product for my first job with AWStreams company, it's your Contactless Digital Wallet",
-    tags: ["React", "redux", "axios", "react table", "qrcode.react", "recharts"],
+    tags: ["React", "redux", "Formik","axios", "react table", "qrcode.react", "recharts"],
     img: '/projects/ecommere.png'
   },
   {

@@ -1,21 +1,20 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { AiFillGithub, } from 'react-icons/ai';
-import {FaLinkedinIn} from 'react-icons/fa'
-import { DiCssdeck } from 'react-icons/di';
+import {FaLinkedinIn} from 'react-icons/fa';
 
-import { Container, Div1, Div2, Div3, Logo, NavLink, ResumeButton, SocialIcons } from './HeaderStyles';
+import { Container, Div2, Div3, Logo, NavLink, ResumeButton, SocialIcons } from './HeaderStyles';
+
+import {motion} from 'framer-motion'
 
 const Header = () =>  (
   <Container>
-    <Div1>
       <Link href="/">
         <Logo>
-          <h5>AE.</h5>
-        <span></span>
+          <Image src="/logo.svg" alt='logo' width="28px" height="28px" />
         </Logo>
       </Link>
-    </Div1>
     <Div2>
       <li>
         <Link href="#work">
@@ -33,9 +32,7 @@ const Header = () =>  (
         </Link>
       </li> 
       <li>
-        <Link href="#" target="_blank" rel="noopener noreferrer">
-          <ResumeButton>Resume</ResumeButton>
-        </Link>
+          <ResumeButton  href="/data/Ahmed Elkassas's Cv.pdf" target="_blank" rel="noopener noreferrer">Resume</ResumeButton>
       </li>       
     </Div2>
       <Div3>

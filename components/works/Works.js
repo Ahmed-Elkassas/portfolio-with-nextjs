@@ -4,7 +4,7 @@ import {FiExternalLink} from 'react-icons/fi'
 import { GridContainer,GridItem, Title, MainSection } from 'styles/global';
 import { Card, CardHeader, CardTitle, CardContent, CardFooter, ImgContainer } from './workStyles';
 
-import {projects} from 'data/constants'
+import {projects} from 'public/data/constants'
 import { ShowMoreButton } from 'components/helpers/ShowMoreButton';
 
 const Works = () => {
