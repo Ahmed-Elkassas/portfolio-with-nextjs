@@ -5,6 +5,7 @@ import { GridContainer,GridItem, Title, MainSection } from 'styles/global';
 import { Card, CardHeader, CardTitle, CardContent, CardFooter, ImgContainer } from './workStyles';
 
 import {projects} from 'data/constants'
+import { ShowMoreButton } from 'components/helpers/ShowMoreButton';
 
 const Works = () => {
   return (
@@ -31,7 +32,7 @@ const Works = () => {
                             <ImgContainer>
                             <CardTitle>{item.title}</CardTitle>
                             <img src={item.img} alt={item.title} /></ImgContainer>
-                            <CardContent>{item.description}</CardContent>
+                            <ShowMoreButton textLimit="50">{item.description}</ShowMoreButton>
                          </header>
                          <CardFooter>
                             {item.tags.map((tag, idx) => (

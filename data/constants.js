@@ -1,6 +1,13 @@
 export const projects = [
   {
     id: 1,
+    title: "OZZ admin-dashboard",
+    description: "It's an admin dashboard built from scratch with React framework. This product for my first job with AWStreams company, it's your Contactless Digital Wallet",
+    tags: ["React", "redux", "axios", "react table", "qrcode.react", "recharts"],
+    img: '/projects/ecommere.png'
+  },
+  {
+    id: 2,
     title: "E-Commercy app",
     description: "Using Nextjs, Sanity CMS and Stripe i built e-commerce website integrating with headless CMS to manage content and API and using my knowlage of Nextjs to take advantage of it.",
     tags: ["NextJs", "Sanity", "React", "Stripe"],
@@ -9,35 +16,23 @@ export const projects = [
     img: '/projects/ecommere.png'
   },
   {
-    id: 2,
+    id: 3,
     title: "Google Search-clone",
-    description:
-      "While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
+    description: "Create a little demo for google search integrate with RapidAPI.",
     tags: ["React", "RapidAPI", "Tailwind"],
     source: "https://github.com/Ahmed-Elkassas/google-search-clone",
     visite: "",
     img: '/projects/ecommere.png'
   },
-  {
-    id: 3,
-    title: "WebRTC App",
-    description:
-      "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-    tags: ["React", "WebRTC"],
-    source: "https://google.com",
-    visite: "", 
-    img: '/projects/ecommere.png'
-  },
+  
   {
     id: 4,
-    title: "Unichat",
-    description:
-      "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-    tags: ["React", "ChatEngine", "Firebase"],
-    source: "https://google.com",
-    visite: "",
+    title: "Job website",
+    description: "",
+    tags: ["React", "semantic-ui-react", "axios"],
+    source: "https://github.com/Ahmed-Elkassas/Jobs-website",
+    visite: "https://react-jobswebsite.netlify.app",
     img: '/projects/ecommere.png'
-
   },
 ];
 

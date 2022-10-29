@@ -62,14 +62,15 @@ export const CardTitle = styled.h3`
 `
 
 export const CardContent = styled.p`
-    padding: 2rem 1.75rem;
+    padding: 2rem 1.75rem 0rem;
     color: #bababa;
 
 `
 export const CardFooter = styled.footer`
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
     padding: 1rem 1.75rem ;
 
