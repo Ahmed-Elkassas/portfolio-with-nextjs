@@ -46,6 +46,7 @@ export const SectionTitle = styled.h2`
     margin-bottom: 8px;
     padding: ${(props) => (props.main ? "16px 0 8px" : "0")};
     max-width: 100%;
+    transform: translateY(0px) translateZ(0px) !important;
   }
 `;
 
@@ -189,9 +190,14 @@ export const Button = styled.a`
       stroke: ${(props) => props.theme.backgrounds.mainBackground};
     }
   }
-
   &:active {
     scale: 0.96;
+  }
+  @media ${props => props.theme.breakpoints.sm} {
+    margin-top: 2rem;
+    span {
+      font-size: 12px;
+    }
   }
 `;
 
