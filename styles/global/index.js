@@ -161,7 +161,7 @@ export const Button = styled.a`
     font-size: 17px;
     font-weight: 900;
     letter-spacing: 0.18em;
-    text-transform: ${(props) => (props.upperText ? "uppercase" : "none")};
+    text-transform: ${(props) => (props.textupper ? "uppercase" : "none")};
     vertical-align: middle;
   }
   svg {
@@ -208,6 +208,20 @@ export const Paragraph = styled.p`
     color: #fff;
    }
 `
+export const BigParagraph = styled.p`
+    width: 90%;
+   padding: 1rem 2rem;
+   margin: auto;
+   font-size: 1.8rem;
+   letter-spacing: 1.5px;
+   line-height: 27px;
+   color: #fff;
+   span {
+    font-weight: 300;
+    color: #fff;
+   }
+`
+
 export const CenteredTitle = styled.h2`
   text-align: center;
   font-size: 4rem;

@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+import {motion} from 'framer-motion'
+
 import { AiFillGithub, } from 'react-icons/ai';
 import {FaLinkedinIn} from 'react-icons/fa';
 
 import { Container, Div2, Div3, Logo, NavLink, ResumeButton, SocialIcons } from './HeaderStyles';
-
-import {motion} from 'framer-motion'
 
 const Header = () =>  (
   <Container>
@@ -18,17 +18,12 @@ const Header = () =>  (
     <Div2>
       <li>
         <Link href="#work">
-          <NavLink>work</NavLink>
+          <NavLink as={motion.a}  whileHover={{scale: 1.2, transition: { duration: 1 }}}>work</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#tech">
-          <NavLink>Technologies</NavLink>
-        </Link>
-      </li>        
-      <li>
         <Link href="#about">
-          <NavLink>About</NavLink>
+          <NavLink as={motion.a} whileHover={{scale: 1.1}}>About</NavLink>
         </Link>
       </li> 
       <li>

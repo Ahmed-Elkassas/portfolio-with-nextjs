@@ -4,7 +4,7 @@ import { EmailLink } from "./ContactStyles"
 
 const Contact = () => {
   return (
-    <MainSection padding id="contact"> 
+    <MainSection padding={+true} id="contact"> 
         <Title>Contact</Title>
         <CenteredTitle>Get In Touch</CenteredTitle>
         <Paragraph>

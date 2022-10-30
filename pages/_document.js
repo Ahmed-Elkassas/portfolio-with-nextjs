@@ -11,7 +11,6 @@ export default class MyDocument extends Document {
               <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
               <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet" />
               <link rel="mask-icon" type="image/x-icon" href="/logo.svg" />
-              <title>Ahmed Elkassas</title>
             </Head>
             <body>
               <Main />

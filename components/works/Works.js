@@ -9,8 +9,8 @@ import { ShowMoreButton } from 'components/helpers/ShowMoreButton';
 
 const Works = () => {
   return (
-    <MainSection padding id="work">
-        <Title blue>
+    <MainSection padding={+true} id="work">
+        <Title blue={+true}>
             Work
         </Title>
         <GridContainer>
