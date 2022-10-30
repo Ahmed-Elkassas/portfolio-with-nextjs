@@ -22,6 +22,9 @@ const GridItem = styled.li`
     color: ${props => props.theme.colors.mainColor};
     line-height: 12px;
   }
+  @media ${props => props.theme.breakpoints.sm} {
+    font-size: 14px;
+  }
 `
 
 const About = () => {

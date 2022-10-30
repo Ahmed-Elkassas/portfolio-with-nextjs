@@ -133,6 +133,25 @@ export const Title = styled.h2`
     background: #ccd6f6;
     margin-left: 15px;
   }
+  @media ${props => props.theme.breakpoints.sm} {
+    font-size: 24px;
+    &::before {
+      width: ${(props) =>
+      props.blue
+        ? "17.5%"
+        : props.yellow
+        ? "32.5%"
+        : "28%"};
+    }
+    &::after {
+     width:  ${(props) =>
+      props.blue
+        ? "262px"
+        : props.yellow
+        ? "200px"
+        : "250px"};
+    }
+  }
 `;
 
 export const Button = styled.a`
@@ -213,6 +232,11 @@ export const Paragraph = styled.p`
     font-weight: 300;
     color: #fff;
    }
+   @media ${props => props.theme.breakpoints.sm} {
+      width: 100%;
+      padding: ${props => props.lowPadding ? "1rem 0.6rem" : "1rem 2rem"};
+      font-size: ${props => props.lowFont ? "1.6rem" : "1.8rem "} ;
+   }
 `
 export const BigParagraph = styled.p`
     width: 90%;
@@ -225,6 +249,9 @@ export const BigParagraph = styled.p`
    span {
     font-weight: 300;
     color: #fff;
+   }
+   @media ${props => props.theme.breakpoints.sm} {
+      width: 100%;
    }
 `
 
@@ -244,6 +271,12 @@ export const SubTitle = styled.div`
   margin-left: 5rem;
   h4 {
     font-size: 2rem;
+  }
+  @media ${props => props.theme.breakpoints.sm} {
+    margin-left: 0;
+    h4 {
+      font-size: 18px;
+    }
   }
 `
 export const ImgContainer = styled.div`
