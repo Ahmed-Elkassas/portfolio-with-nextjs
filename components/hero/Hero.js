@@ -5,8 +5,6 @@ import {motion} from 'framer-motion'
 import { Section, SectionText, SectionTitle, Button } from 'styles/global';
 import { SectionLeft } from './HeroStyles';
 
-
-
 const Hero = () => {
   return (
     <Section row={+true} nopadding={+true}>
