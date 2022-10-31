@@ -14,6 +14,9 @@ export const Container = styled.div`
   grid-column-gap: 2rem;
   padding-top: 2rem;
   margin: auto;
+  @media ${props => props.theme.breakpoints.md} {
+    align-items: center;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
     grid-template-columns: repeat(5, 1fr);

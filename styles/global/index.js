@@ -36,7 +36,8 @@ export const SectionTitle = styled.h2`
     font-size: ${(props) => (props.main ? "49px" : "40px")};
     line-height: ${(props) => (props.main ? "52px" : "42px")};
     margin-bottom: 12px;
-    padding: ${(props) => (props.main ? "40px 0 12px" : "0")};
+    padding: ${(props) => (props.main ? "74px 0 12px" : "0")};
+    transform: translateY(15px) translateZ(0px) !important;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 32px;
@@ -212,8 +213,10 @@ export const Button = styled.a`
   &:active {
     scale: 0.96;
   }
-  @media ${props => props.theme.breakpoints.sm} {
+  @media ${props => props.theme.breakpoints.md}  {
     margin-top: 2rem;
+  }
+  @media ${props => props.theme.breakpoints.sm} {
     span {
       font-size: 12px;
     }
