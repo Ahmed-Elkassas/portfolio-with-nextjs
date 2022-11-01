@@ -8,6 +8,7 @@ import { Card, CardHeader, CardTitle, CardContent, CardFooter, ImgContainer } fr
 
 import {projects} from 'public/data/constants'
 import { ShowMoreButton } from 'components/helpers/ShowMoreButton';
+import Image from 'next/image';
 
 const projectVariants = {
     offscreen: {
@@ -47,8 +48,9 @@ const Works = () => {
                                 </div>
                             </CardHeader>
                             <ImgContainer>
-                            <CardTitle>{item.title}</CardTitle>
-                            <img src={item.img} alt={item.title} /></ImgContainer>
+                              <CardTitle>{item.title}</CardTitle>
+                              <img src={item.img} alt={item.title} />
+                            </ImgContainer>
                             <ShowMoreButton textLimit="50">{item.description}</ShowMoreButton>
                          </header>
                          <CardFooter>

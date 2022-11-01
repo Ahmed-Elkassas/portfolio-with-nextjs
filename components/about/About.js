@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { MainSection, Title, Paragraph, CenteredTitle, SubTitle, Section, ImgContainer, BigParagraph } from "styles/global";
 
 import {motion} from 'framer-motion'
+import Image from 'next/image';
 
 const GridType = styled.ul`
     display: grid;
@@ -91,7 +92,7 @@ const About = () => {
         <Section row={+true}>
           <Paragraph>Passionate about web development and design. Over last two years of development experience in HTML, CSS, JS, React and NextJS frameworks at <span>AWStreams.</span></Paragraph>
           <ImgContainer>
-            <img src='/hello-world-html.webp' alt="hello world code" />
+            <img src='/public/hello-world-html.webp' alt="hello world code" />
           </ImgContainer>
         </Section>
       </motion.div>

@@ -14,6 +14,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
      <Head>
+        <link rel="shortcut icon" href="/fav.ico" />
         <title>Ahmed Elkassas</title>
       </Head>
       {loading ? (
