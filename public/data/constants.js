@@ -4,7 +4,7 @@ export const projects = [
     title: "OZZ admin-dashboard",
     description: "It's an admin dashboard built from scratch with React framework. This product for my first job with AWStreams company, it's your Contactless Digital Wallet",
     tags: ["React", "redux", "Formik","axios", "react table", "qrcode.react", "recharts"],
-    img: '/projects/ecommere.png'
+    img: '/projects/social-wallet.webp'
   },
   {
     id: 2,
@@ -22,17 +22,17 @@ export const projects = [
     tags: ["React", "RapidAPI", "Tailwind"],
     source: "https://github.com/Ahmed-Elkassas/google-search-clone",
     visite: "",
-    img: '/projects/ecommere.png'
+    img: '/projects/google-search.jpg'
   },
   
   {
     id: 4,
     title: "Job website",
-    description: "",
+    description: "Template shows available jobs.",
     tags: ["React", "semantic-ui-react", "axios"],
     source: "https://github.com/Ahmed-Elkassas/Jobs-website",
     visite: "https://react-jobswebsite.netlify.app",
-    img: '/projects/ecommere.png'
+    img: '/projects/jobs.webp'
   },
 ];
 
