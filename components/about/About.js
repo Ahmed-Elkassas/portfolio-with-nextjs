@@ -65,7 +65,7 @@ const About = () => {
       <Title yellow={+true}>About me</Title>
       <motion.div variants={textVariants} initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }}>
         <Paragraph> 
-          Hello! I'm a junior web developer offering +1 year of experience and I
+          Hello! I&apos;m a junior web developer offering +1 year of experience and I
           enjoy creating things that live on the internet. My interest in web
           development started back in 2018 when I decided to shift my career path
           to web development, so I spend most of days to learn technology and

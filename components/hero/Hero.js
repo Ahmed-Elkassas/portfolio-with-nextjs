@@ -14,10 +14,10 @@ const Hero = () => {
             Ahmed Elkassas here.
         </SectionTitle>
         <SectionText as={motion.p} initial={{y: 20}} animate={{y: -10}}> 
-            I'm a front end developer based in Egypt, I have developed many types of front-ends from well know web-application.
+            I&apos;m a front end developer based in Egypt, I have developed many types of front-ends from well know web-application.
         </SectionText>
         <Button as={motion.a} initial={{x: "-100vw"}} animate={{x: 0}} transition={{delay: .5}} padding={+true} textupper={+true} href='#contact'>
-            <span>Let's build something awesome</span>
+            <span>Let&apos;s build something awesome</span>
             <FiArrowRight size="2rem" />
         </Button>
       </SectionLeft>
