@@ -1,3 +1,5 @@
+import {motion} from 'framer-motion'
+
 import {AiOutlineFolder} from 'react-icons/ai';
 import {FiExternalLink} from 'react-icons/fi'
 
@@ -6,6 +8,21 @@ import { Card, CardHeader, CardTitle, CardContent, CardFooter, ImgContainer } fr
 
 import {projects} from 'public/data/constants'
 import { ShowMoreButton } from 'components/helpers/ShowMoreButton';
+
+const projectVariants = {
+    offscreen: {
+      x: -10,
+      opacity: 0
+    },
+    onscreen: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        bounce: 0.4,
+        duration: 0.7
+      }
+    }
+  };
 
 const Works = () => {
   return (
@@ -16,7 +33,7 @@ const Works = () => {
         <GridContainer>
             {projects.map(item => {
                 return (
-                    <GridItem key={item.id}>
+                    <GridItem as={motion.li} key={item.id} variants={projectVariants} initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }}>
                        <Card>
                          <header style={{width: '100%'}}>
                             <CardHeader>
