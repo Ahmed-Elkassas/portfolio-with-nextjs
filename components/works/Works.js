@@ -41,11 +41,11 @@ const Works = () => {
                                 <div className='project__folder'> 
                                     <AiOutlineFolder size="4rem" />
                                 </div>
-                                <div className='project__links'> 
+                                {item.source ? (<div className='project__links'> 
                                     <a href={item.source}>
                                         <FiExternalLink size="2rem" />
                                     </a>
-                                </div>
+                                </div>): null}
                             </CardHeader>
                             <ImgContainer>
                               <CardTitle>{item.title}</CardTitle>

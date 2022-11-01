@@ -92,7 +92,7 @@ const About = () => {
         <Section row={+true}>
           <Paragraph>Passionate about web development and design. Over last two years of development experience in HTML, CSS, JS, React and NextJS frameworks at <span>AWStreams.</span></Paragraph>
           <ImgContainer>
-            <img src='/public/hello-world-html.webp' alt="hello world code" />
+            <img src='hello-world-html.webp' alt="hello world code" />
           </ImgContainer>
         </Section>
       </motion.div>
