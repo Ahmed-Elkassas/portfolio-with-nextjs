@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 import {AiOutlineFolder} from 'react-icons/ai';
 import {FiExternalLink} from 'react-icons/fi'
 
-import { GridContainer,GridItem, Title, MainSection } from 'styles/global';
+import { GridContainer, GridItem, Title, MainSection } from 'styles/global';
 import { Card, CardHeader, CardTitle, CardContent, CardFooter, ImgContainer } from './workStyles';
 
 import {projects} from 'public/data/constants'
@@ -25,16 +25,9 @@ const projectVariants = {
     }
   };
 
-const Works = () => {
+function CardItem({item}) {
   return (
-    <MainSection padding={+true} id="work">
-        <Title blue={+true}>
-            Work
-        </Title>
-        <GridContainer>
-            {projects.map(item => {
-                return (
-                    <GridItem as={motion.li} key={item.id} variants={projectVariants} initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }}>
+     <GridItem as={motion.li}  variants={projectVariants} initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }}>
                        <Card>
                          <header style={{width: '100%'}}>
                             <CardHeader>
@@ -60,6 +53,19 @@ const Works = () => {
                          </CardFooter>
                        </Card>
                     </GridItem>
+  )
+}
+
+const Works = () => {
+  return (
+    <MainSection padding={+true} id="work">
+        <Title blue={+true}>
+            Work
+        </Title>
+        <GridContainer>
+            {projects.map(item => {
+                return (
+                   <CardItem key={item.id} item={item} />
                 )
             })}
         </GridContainer>

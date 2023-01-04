@@ -18,6 +18,8 @@ const GridItem = styled.li`
     position: relative;
     margin-bottom: 10px;
     padding-left: 20px;
+    color:  ${(props) => (props.note ? props.theme.colors.mainColor : "#fff")};
+    font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};
   &::before {
     content: "▹";
     position: absolute;
@@ -81,6 +83,8 @@ const About = () => {
           <GridItem>Typescript</GridItem>
           <GridItem>Redux</GridItem>
           <GridItem>Sanity (CMS)</GridItem>
+          <GridItem note={+true} title="course learning on progress">Nodejs Basics</GridItem>
+          <GridItem note={+true} title="course learning on progress">SQL</GridItem>
         </GridType>
       </motion.div>
       <motion.div variants={expertiseVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.8 }}>
