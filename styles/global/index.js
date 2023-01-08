@@ -101,7 +101,7 @@ export const Title = styled.h2`
   margin: 0px 40px 40px 0px;
   font-size: 29px;
   font-weight: 900;
-  width: 100%;
+  z-index: 0;
   color: #b3ffae;
   &::before {
     content: "";
@@ -110,7 +110,8 @@ export const Title = styled.h2`
     transition: all 0.1s ease-in-out;
     z-index: -1;
     height: 0.3em;
-    width: ${(props) =>
+    width:
+      ${(props) =>
       props.blue
         ? "6.5%"
         : props.yellow
@@ -136,22 +137,13 @@ export const Title = styled.h2`
   }
   @media ${props => props.theme.breakpoints.sm} {
     font-size: 24px;
+    display: inline-block;
     &::before {
-      width: ${(props) =>
-      props.blue
-        ? "17.5%"
-        : props.yellow
-        ? "32.5%"
-        : "28%"};
+      width: 104%;
+      left: -1%;
     }
     &::after {
-     width:  ${(props) =>
-      props.blue
-        ? "262px"
-        : props.yellow
-        ? "200px"
-        : "250px"};
-    }
+    width: 0;
   }
 `;
 
