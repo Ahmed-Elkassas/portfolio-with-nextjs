@@ -1,6 +1,6 @@
 # [🚀 Ahmed Elkassas Portfolio](https://ahmedelkassas.com)
 
-> 🚧 **This project is  under construction!** 🚧 Still, give it a try and don't mind [logging bugs](https://github.com/Ahmed-Elkassas/portfolio-with-nextjs/issues) along the way :)
+> 🚧 **This project is under construction for enhancement!** 🚧 Still, give it a try and don't mind [logging bugs](https://github.com/Ahmed-Elkassas/portfolio-with-nextjs/issues) along the way :)
 
 ## ⚒️ Technologies && Packages used
 
@@ -9,7 +9,7 @@
 3. [**styled-components**](https://styled-components.com/)
 4. [**framer-motion**](https://www.framer.com/motion/)
 
-## Feature set 
+## 🎒 Feature set 
 
 | Feature                                                                               | Status    |
 |---------------------------------------------------------------------------------------|-----------|
