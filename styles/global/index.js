@@ -116,12 +116,15 @@ export const Title = styled.h2`
         ? "6.5%"
         : props.yellow
         ? "11.5%"
+        : props.green
+        ? "100%"
         : "9.4%"};
     background: ${(props) =>
       props.blue
       ? "linear-gradient(65deg, #2C49D8 0%, #2C49D8 100%, rgba(255, 209, 0, 0) 100%)"
       : props.yellow
       ? "linear-gradient(65deg, #FF6B2B 0%, #FF6B2B 100%, rgba(255, 209, 0, 0) 100%)"
+      : props.green ? "linear-gradient(65deg, #05df7a 0%, #05df7a 100%, rgba(255, 209, 0, 0) 100%)"
       : "linear-gradient(65deg, #DF058D 0%, #DF058D 100%, rgba(255, 209, 0, 0) 100%)"};
 }
   &::after {
@@ -129,7 +132,7 @@ export const Title = styled.h2`
     position: relative;
     top: 0px;
     left: 0;
-    width: 300px;
+    width:${(props) => props.show ? "300px" : '0'} ;
     height: 1px;
     display: block;
     background: #ccd6f6;

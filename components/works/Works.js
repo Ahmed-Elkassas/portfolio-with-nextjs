@@ -59,7 +59,7 @@ function CardItem({item}) {
 const Works = () => {
   return (
     <MainSection padding={+true} id="work">
-        <Title blue={+true}>
+        <Title blue={+true} show={+true}>
             Work
         </Title>
         <GridContainer>

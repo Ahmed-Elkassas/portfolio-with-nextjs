@@ -64,7 +64,7 @@ const About = () => {
 
   return (
     <MainSection as={motion.section}  padding={+true} id="about"  >
-      <Title yellow={+true}>About me</Title>
+      <Title yellow={+true} show={+true}>About me</Title>
       <motion.div variants={textVariants} initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }}>
         <Paragraph> 
           Hello! I&apos;m a junior web developer offering +1 year of experience and I

@@ -20,7 +20,7 @@ const emailVariants = {
 const Contact = () => {
   return (
     <MainSection padding={+true} id="contact"> 
-        <Title>Contact</Title>
+        <Title show={+true}>Contact</Title>
         <div>
           <CenteredTitle>Get In Touch</CenteredTitle>
           <Paragraph >
