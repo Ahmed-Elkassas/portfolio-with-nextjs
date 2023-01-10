@@ -18,6 +18,8 @@ const GridItem = styled.li`
     position: relative;
     margin-bottom: 10px;
     padding-left: 20px;
+    color:  ${(props) => (props.note ? props.theme.colors.mainColor : "#fff")};
+    font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};
   &::before {
     content: "▹";
     position: absolute;
@@ -62,7 +64,7 @@ const About = () => {
 
   return (
     <MainSection as={motion.section}  padding={+true} id="about"  >
-      <Title yellow={+true}>About me</Title>
+      <Title yellow={+true} show={+true}>About me</Title>
       <motion.div variants={textVariants} initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }}>
         <Paragraph> 
           Hello! I&apos;m a junior web developer offering +1 year of experience and I
@@ -81,6 +83,8 @@ const About = () => {
           <GridItem>Typescript</GridItem>
           <GridItem>Redux</GridItem>
           <GridItem>Sanity (CMS)</GridItem>
+          <GridItem note={+true} title="course learning on progress">Nodejs Basics</GridItem>
+          <GridItem note={+true} title="course learning on progress">SQL</GridItem>
         </GridType>
       </motion.div>
       <motion.div variants={expertiseVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.8 }}>

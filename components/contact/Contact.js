@@ -20,16 +20,16 @@ const emailVariants = {
 const Contact = () => {
   return (
     <MainSection padding={+true} id="contact"> 
-        <Title>Contact</Title>
-        <motion.div variants={emailVariants} initial="offscreen" whileInView="onscreen" viewport={{ once: true, amount: 0.8 }}>
+        <Title show={+true}>Contact</Title>
+        <div>
           <CenteredTitle>Get In Touch</CenteredTitle>
-          <Paragraph lowPadding={+true} lowFont={+true}>
+          <Paragraph >
               I’m currently looking to join a new team of creative designers and developers. If you think we might be a good fit for one another send me an 
-              <EmailLink href="mailto:contact@ahmedelkassas.com" >📧 contact@ahmedelkassas.com</EmailLink>
+              <EmailLink href="mailto:contact@ahmedelkassas.com" >contact@ahmedelkassas.com</EmailLink>
           </Paragraph>
-        </motion.div>
+        </div>
     </MainSection>
   )
 }
 
-export default Contact
+export default Contact;

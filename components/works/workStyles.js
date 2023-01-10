@@ -72,8 +72,7 @@ export const CardFooter = styled.footer`
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
-    padding: 1rem 1.75rem ;
-
+    padding: 1rem 1.75rem;
     span {
         color: gray;
         padding: 6px;
