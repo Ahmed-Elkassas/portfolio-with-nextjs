@@ -13,12 +13,12 @@
 
 | Feature                                                                               | Status    |
 |---------------------------------------------------------------------------------------|-----------|
-| Animation with framer-motion           | ✅         |
-| More animation on scroll    | ⏳         |
-| Add new section (what am doing, Nowadays)   | ⏳         |
-|     Add new section (Small projects)  |    ❌    |
-|  Light mode & Dark mode    | ❌         |
-|  التحويل للغة العربية| ❌         |
+|  Animation with framer-motion   | ✅  |
+|  More animation on scroll  | ⏳  |
+|  Add new section (what am doing, Nowadays)  | ✅  |
+|  Add new section (Small projects)  | ❌  |
+|  Light mode & Dark mode  | ❌  |
+|  التحويل للغة العربية| ❌  |
 
 - ✅ = Lunch
 - ⏳ = In progress
