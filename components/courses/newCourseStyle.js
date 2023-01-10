@@ -2,8 +2,9 @@ import styled, { keyframes } from "styled-components";
 
 export const Div = styled.div`
   display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
+  align-items: ${(props) => (props.alignCenter ? "center" : "baseline")};
+  justify-content: ${(props) => props.flex};
+  gap: ${(props) => props.gap};
 `;
 
 export const slide = keyframes`
@@ -31,11 +32,8 @@ export const LoadingBar = styled.div`
   );
   animation: ${slide} 4s linear infinite;
   will-change: background-position;
-  @media only screen and (max-width: 450px) {
-    width: calc(80px * 3);
-  }
-  @media only screen and (max-width: 350px) {
-    width: calc(80px * 2);
+  @media only screen and (max-width: 570px) {
+    width: 0px;
   }
 `;
 
@@ -44,10 +42,10 @@ export const SubTitle = styled.h3`
   margin-bottom: 1.3rem;
 `;
 
-export const GridContainer = styled.ul`
+export const GridContainer = styled.ul` 
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
 `;
 
 export const GridItem = styled.li`
@@ -62,19 +60,22 @@ export const Item = styled.div`
   transition: rgba(0, 0, 0, 0.1) 0.3s, border 0.3s, border-radius 0.3s,
     box-shadow 0.3s;
   padding: 40px 30px;
-  min-height: max-content;
+  min-height: 259px;
 `;
 
 export const FlexItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: ${props => props.flexWrap};
   gap: 2px 10px;
   margin-bottom: ${(props) => (props.high ? "3rem" : "2.3rem")};
+  margin-left: ${(props) => props.ml};
+  width: ${(props) => props.width};
 `;
 
 export const Text = styled.h4`
-  font-size: 24px;
+  font-size: 1.6rem;
 `;
 
 export const CourseItem = styled.div`
@@ -85,5 +86,5 @@ export const CourseItem = styled.div`
 `;
 
 export const CourseName = styled.h5`
-  font-size: 22px;
+  font-size: 1.3rem;
 `;
