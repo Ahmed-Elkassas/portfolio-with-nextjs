@@ -1,3 +1,10 @@
+import Aos from "aos";
+import 'aos/dist/aos.cjs'
+
+import { MdOutlineFileDownloadDone } from "react-icons/md";
+import { BsHourglassSplit } from "react-icons/bs";
+import { FaNodeJs, FaReact } from "react-icons/fa";
+
 import { MainSection, Title } from "styles/global";
 import {
   LoadingBar,
@@ -10,14 +17,15 @@ import {
   CourseItem,
   CourseName,
 } from "./newCourseStyle";
-import { MdOutlineFileDownloadDone } from "react-icons/md";
-import { BsHourglassSplit } from "react-icons/bs";
-import { FaNodeJs, FaReact } from "react-icons/fa";
+
+
 import { AiOutlineConsoleSql, AiOutlineDatabase } from "react-icons/ai";
 import { Div } from "./newCourseStyle";
 import { ProgressBar } from "components/helpers/ProgressBar";
+import { useEffect } from "react";
 
 const NewCourses = () => {
+
   return (
     <MainSection padding={+true}>
       <Div flex="flex-start">
@@ -27,7 +35,7 @@ const NewCourses = () => {
       <SubTitle>Courses</SubTitle>
       <GridContainer>
         <GridItem>
-          <Item>
+          <Item data-aos="fade-up">
             <FlexItem high={+true}>
               <MdOutlineFileDownloadDone size="3.5rem" />
               <Text>On progress</Text>
@@ -49,7 +57,7 @@ const NewCourses = () => {
           </Item>
         </GridItem>
         <GridItem>
-          <Item>
+          <Item data-aos="fade-down">
             <FlexItem high={+true}>
               <BsHourglassSplit size="3.5rem" />
               <Text>Hold</Text>
