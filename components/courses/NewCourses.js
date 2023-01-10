@@ -35,16 +35,16 @@ const NewCourses = () => {
             <Div alignCenter={+true} gap="20px">
               <FlexItem width="40%" ml="1.4rem">
                 <FaNodeJs size="2.9rem" />
-                <CourseName>Nodejs</CourseName>
+                <CourseName href="https://www.udemy.com/course/nodejs-the-complete-guide" target="_blank">Nodejs</CourseName>
               </FlexItem>
               <ProgressBar width={120} percent="0.35" title="35% is Finished" color="#3F873F" />
             </Div>
             <Div alignCenter={+true} gap="20px">
               <FlexItem  width="40%" ml="1.4rem">
                 <AiOutlineConsoleSql size="2.9rem" />
-                <CourseName>SQL</CourseName>
+                <CourseName  href="https://www.udemy.com/course/sql-the-complete-developers-guide-mysql-postgresql" target="_blank">SQL</CourseName>
               </FlexItem>
-              <ProgressBar width={120} percent="0.55" title="55% is Finished" color="#61DAFB" />
+              <ProgressBar width={120} percent="0.55" title="55% is Finished" />
             </Div>
           </Item>
         </GridItem>
@@ -57,16 +57,16 @@ const NewCourses = () => {
             <Div alignCenter={+true} gap="20px" flex="space-between">
             <FlexItem ml="1.4rem" >
               <AiOutlineDatabase size="3.5rem" />
-              <CourseName>Datastracture & Algorithems</CourseName>
+              <CourseName  href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass" target="_blank">Datastracture & Algorithems</CourseName>
             </FlexItem>
             <ProgressBar width={120} percent="0.4" title="40% is Finished" />
             </Div>
             <Div alignCenter={+true} gap="20px" flex="space-between">
               <FlexItem ml="1.4rem">
                 <FaReact size="2.9rem" />
-                <CourseName>React Native</CourseName>
+                <CourseName href="https://www.udemy.com/course/react-native-the-practical-guide" target="_blank">React Native</CourseName>
               </FlexItem>
-              <ProgressBar width={120} percent="0.15" title="15% is Finished" />
+              <ProgressBar width={120} percent="0.15" title="15% is Finished"  color="#61DAFB" />
             </Div>
           </Item>
         </GridItem>

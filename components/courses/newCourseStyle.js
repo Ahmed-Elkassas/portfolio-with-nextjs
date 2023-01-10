@@ -85,6 +85,7 @@ export const CourseItem = styled.div`
   gap: 2px 10px;
 `;
 
-export const CourseName = styled.h5`
+export const CourseName = styled.a`
   font-size: 1.3rem;
+  color: #fff;
 `;
