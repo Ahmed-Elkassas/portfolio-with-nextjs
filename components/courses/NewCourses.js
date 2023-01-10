@@ -1,52 +1,50 @@
-import styled, { keyframes } from "styled-components";
 import { MainSection, Title } from "styles/global";
+import { LoadingBar, SubTitle, GridContainer, GridItem, Item, FlexItem, Text, CourseItem, CourseName} from './newCourseStyle'
+import { MdOutlineFileDownloadDone } from "react-icons/md";
+import { BsHourglassSplit } from "react-icons/bs";
+import { FaNodeJs } from "react-icons/fa";
+import { AiOutlineConsoleSql, AiOutlineDatabase } from "react-icons/ai";
+import { Div } from "./newCourseStyle";
 
-const Div = styled.div`
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
-`
-
-const slide = keyframes`
-    from {
-    background-position-x: 0;
-  }
-
-  to {
-    background-position-x: 113px;
-  }
-`;
-
-const LoadingBar = styled.div`
-  min-height: 2px;
-  border-radius: 1px;
-  width: calc(80px * 4);
-  box-shadow: 3px 5px 5px -2px #2b394c;
-  background-color: ${props => props.theme.backgrounds.mainBackground};
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 25px,
-    #64ffda 25px,
-    #64ffda 75px
-  );
-  animation: ${slide} 4s linear infinite;
-  will-change: background-position;
-  @media only screen and (max-width: 450px) {
-      width: calc(80px * 3);
-  }
-  @media only screen and (max-width: 350px) {
-      width: calc(80px * 2);
-  }
-`;
 
 const NewCourses = () => {
   return (
     <MainSection padding={+true}>
-        <Div>
-          <Title green={+true}>What&apos;s new ?</Title>
-          <LoadingBar />
-        </Div>
+      <Div>
+        <Title green={+true}>What&apos;s new ?</Title>
+        <LoadingBar />
+      </Div>
+      <SubTitle>Courses</SubTitle>
+      <GridContainer>
+        <GridItem>
+          <Item>
+            <FlexItem high={+true}>
+              <MdOutlineFileDownloadDone size="3.5rem" />
+              <Text>On progress</Text>
+            </FlexItem>
+            <FlexItem>
+              <FaNodeJs size="2.9rem" />
+              <CourseName>Nodejs</CourseName>
+            </FlexItem>
+            <FlexItem>
+              <AiOutlineConsoleSql size="2.9rem" />
+              <CourseName>SQL</CourseName>
+            </FlexItem>
+          </Item>
+        </GridItem>
+        <GridItem>
+          <Item>
+            <FlexItem high={+true}>
+              <BsHourglassSplit size="3.5rem" />
+              <Text>Hold</Text>
+            </FlexItem>
+            <FlexItem>
+              <AiOutlineDatabase  size="3.5rem"/>
+              <CourseName>Datastracture & Algorithems</CourseName>
+            </FlexItem>
+          </Item>
+        </GridItem>
+      </GridContainer>
     </MainSection>
   );
 };
