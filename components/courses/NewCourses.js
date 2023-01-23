@@ -22,7 +22,7 @@ import {
 import { AiOutlineConsoleSql, AiOutlineDatabase } from "react-icons/ai";
 import { Div } from "./newCourseStyle";
 import { ProgressBar } from "components/helpers/ProgressBar";
-import { useEffect } from "react";
+import { courses } from "public/data/constants";
 
 const NewCourses = () => {
 
@@ -40,20 +40,17 @@ const NewCourses = () => {
               <MdOutlineFileDownloadDone size="3.5rem" />
               <Text>On progress</Text>
             </FlexItem>
-            <Div alignCenter={+true} gap="20px">
-              <FlexItem width="40%" ml="1.4rem">
-                <FaNodeJs size="2.9rem" />
-                <CourseName href="https://www.udemy.com/course/nodejs-the-complete-guide" target="_blank">Nodejs</CourseName>
-              </FlexItem>
-              <ProgressBar width={120} percent="0.35" title="35% is Finished" color="#3F873F" />
-            </Div>
-            <Div alignCenter={+true} gap="20px">
-              <FlexItem  width="40%" ml="1.4rem">
-                <AiOutlineConsoleSql size="2.9rem" />
-                <CourseName  href="https://www.udemy.com/course/sql-the-complete-developers-guide-mysql-postgresql" target="_blank">SQL</CourseName>
-              </FlexItem>
-              <ProgressBar width={120} percent="0.55" title="55% is Finished" />
-            </Div>
+            {courses.onPrgress.map(course => {
+              return (
+                <Div alignCenter={+true} gap="20px" key={course.id}>
+                <FlexItem width="40%" ml="1.4rem">
+                  {course.icon}
+                  <CourseName href={course.link} target="_blank">{course.name}</CourseName>
+                </FlexItem>
+                <ProgressBar width={120} percent={course.percent} title={course.finished} color="#3F873F" />
+              </Div>
+              )
+            })}
           </Item>
         </GridItem>
         <GridItem>
@@ -62,20 +59,17 @@ const NewCourses = () => {
               <BsHourglassSplit size="3.5rem" />
               <Text>Hold</Text>
             </FlexItem>
-            <Div alignCenter={+true} gap="20px" flex="space-between">
-            <FlexItem ml="1.4rem" >
-              <AiOutlineDatabase size="3.5rem" />
-              <CourseName  href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass" target="_blank">Datastracture & Algorithems</CourseName>
-            </FlexItem>
-            <ProgressBar width={120} percent="0.4" title="40% is Finished" />
-            </Div>
-            <Div alignCenter={+true} gap="20px" flex="space-between">
-              <FlexItem ml="1.4rem">
-                <FaReact size="2.9rem" />
-                <CourseName href="https://www.udemy.com/course/react-native-the-practical-guide" target="_blank">React Native</CourseName>
-              </FlexItem>
-              <ProgressBar width={120} percent="0.15" title="15% is Finished"  color="#61DAFB" />
-            </Div>
+            {courses.hold.map(course => {
+              return (
+                <Div alignCenter={+true} gap="20px" key={course.id}>
+                <FlexItem width="40%" ml="1.4rem">
+                  {course.icon}
+                  <CourseName href={course.link} target="_blank">{course.name}</CourseName>
+                </FlexItem>
+                <ProgressBar width={120} percent={course.percent} title={course.finished} color={course.color} />
+              </Div>
+              )
+            })}
           </Item>
         </GridItem>
       </GridContainer>

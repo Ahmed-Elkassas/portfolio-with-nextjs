@@ -1,3 +1,6 @@
+import { AiOutlineConsoleSql, AiOutlineDatabase } from "react-icons/ai";
+import { FaNodeJs, FaReact } from "react-icons/fa";
+
 export const projects = [
   {
     id: 1,
@@ -36,3 +39,42 @@ export const projects = [
   },
 ];
 
+export const courses = {
+  onPrgress: [
+    {
+      id: 1,
+      name: "Nodejs",
+      link: "https://www.udemy.com/course/nodejs-the-complete-guide",
+      percent: "0.36",
+      finished: '36% is Finished',
+      icon: <FaNodeJs size="2.9rem"  />
+    },
+    {
+      id: 2,
+      name: "SQL",
+      link: "https://www.udemy.com/course/sql-the-complete-developers-guide-mysql-postgresql",
+      percent: "0.60",
+      finished: '60% is Finished',
+      icon: <AiOutlineConsoleSql size="2.9rem" />
+    },
+  ],
+  hold: [
+    {
+      id: 1,
+      name: "Datastracture & Algorithems",
+      link: "https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass",
+      percent: "0.4",
+      finished: '40% is Finished',
+      icon: <AiOutlineDatabase size="3.5rem" />
+    },
+    {
+      id: 2,
+      name: "React Native",
+      link: "https://www.udemy.com/course/react-native-the-practical-guide",
+      percent: "0.15",
+      finished: '15% is Finished',
+      icon: <FaReact size="2.9rem" />,
+      color: "#61DAFB"
+    },
+  ]
+}
