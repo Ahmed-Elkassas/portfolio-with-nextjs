@@ -53,8 +53,8 @@ export const courses = {
       id: 2,
       name: "SQL",
       link: "https://www.udemy.com/course/sql-the-complete-developers-guide-mysql-postgresql",
-      percent: "0.76",
-      finished: '76% is Finished',
+      percent: "1",
+      finished: 'Finished',
       icon: <AiOutlineConsoleSql size="2.9rem" />
     },
   ],
