@@ -14,8 +14,8 @@ export const projects = [
     title: "E-Commercy app",
     description: "Using Nextjs, Sanity CMS and Stripe i built e-commerce website integrating with headless CMS to manage content and API and using my knowlage of Nextjs to take advantage of it.",
     tags: ["NextJs", "Sanity", "React", "Stripe"],
-    source: "https://github.com/Ahmed-Elkassas/ecommercy-app",
-    visit: "https://github.com/Ahmed-Elkassas/ecommercy-app",
+    source: "https://ecommercy-app.vercel.app/",
+    visit: "https://ecommercy-app.vercel.app/",
     img: '/projects/ecommere.png'
   },
   {
