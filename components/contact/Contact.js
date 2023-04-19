@@ -25,7 +25,7 @@ const Contact = () => {
           <CenteredTitle>Get In Touch</CenteredTitle>
           <Paragraph >
               I’m currently looking to join a new team of creative designers and developers. If you think we might be a good fit for one another send me an 
-              <EmailLink href="mailto:contact@ahmedelkassas.com" >contact@ahmedelkassas.com</EmailLink>
+              <EmailLink href="mailto:dev.ahmedbasuony@gmail.com" >dev.ahmedbasuony@gmail.com</EmailLink>
           </Paragraph>
         </div>
     </MainSection>
